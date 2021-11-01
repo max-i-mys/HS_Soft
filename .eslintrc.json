@@ -1,0 +1,34 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"jest": true
+	},
+	"extends": ["eslint:recommended", "plugin:react/recommended"],
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["react"],
+	"rules": {
+		"react/react-in-jsx-scope": "off",
+		"quotes": ["error", "single"],
+		"semi": "off",
+		"react/prop-types": ["off"],
+		"no-plusplus": "off",
+		"eol-last": "off",
+		"max-len": ["error", 120, { "ignoreUrls": true }],
+		"no-tabs": "off",
+		"no-alert": "off",
+		"no-param-reassign": "off",
+		"indent": [2, "tab"]
+	}
+}
